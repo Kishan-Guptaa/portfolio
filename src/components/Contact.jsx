@@ -92,8 +92,8 @@ export default function Contact() {
           {/* Right: Profile Image + Social Links */}
           <div className="flex flex-col items-center lg:w-1/2 text-center">
             <img
-              src="/portfolio-pic.jpg"
-              alt="Kishan Gupta"
+               src={`${import.meta.env.BASE_URL}portfolio-pic.jpg`}
+              alt="Kishan-Gupta"
               className="w-48 h-48 rounded-full object-cover border-2 border-gray-500 shadow-lg mb-6"
             />
             <p className="text-gray-400 mb-6 text-lg">Also connect with me on:</p>
