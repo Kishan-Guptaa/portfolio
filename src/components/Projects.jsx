@@ -10,7 +10,7 @@ const allProjects = [
     tech: ["React", "Tailwind CSS"],
     live: "https://kishan-guptaa.github.io/throttlex/",
     github: "https://github.com/Kishan-Guptaa/throttlex",
-    image: "/images/throttlex.png",
+    image: `${import.meta.env.BASE_URL}images/throttlex.png`,
   },
   {
     title: "Groozie App",
@@ -18,7 +18,7 @@ const allProjects = [
     tech: ["EJS", "JavaScript", "TailwindCss"],
     live: "https://groziee.onrender.com/",
     github: "https://github.com/Kishan-Guptaa/groziee",
-    image: "/images/Groozie.png",
+    image: `${import.meta.env.BASE_URL}images/Groozie.png`,
   },
   {
     title: "Realtime Chess Game",
@@ -26,9 +26,10 @@ const allProjects = [
     tech: ["HTML", "CSS", "JavaScript", "Socket.IO", "Node.js"],
     live: "https://mychess-a6gr.onrender.com/",
     github: "https://github.com/yourusername/realtime-chess",
-    image: "/images/chess.jpeg",
+    image: `${import.meta.env.BASE_URL}images/chess.jpeg`,
   },
 ];
+
 
 export default function Projects() {
   return (

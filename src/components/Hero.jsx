@@ -10,6 +10,8 @@ export default function Hero() {
   );
   const audioRef = useRef();
 
+  const base = import.meta.env.BASE_URL;
+
   const apps = [
     { id: "about", icon: "https://img.icons8.com/fluency/96/user-male-circle.png", title: "About" },
     { id: "spotify", icon: "https://img.icons8.com/fluency/96/spotify--v1.png", title: "Spotify" },
@@ -21,44 +23,44 @@ export default function Hero() {
     soundhelix: {
       title: "Saiyaara",
       artist: "Tanisk Bagchi",
-      src: "/Saiyaara.mp3",
-      img: "/Saiyaara.jpeg",
+      src: `${base}Saiyaara.mp3`,
+      img: `${base}Saiyaara.jpeg`,
     },
     arijit: {
       title: "Raataan Lambiyan",
       artist: "Arijit Singh",
-      src: "/arijit-raataan.mp3",
-      img: "/Raataan-Lambiyan.jpeg",
+      src: `${base}arijit-raataan.mp3`,
+      img: `${base}Raataan-Lambiyan.jpeg`,
     },
     arijit1: {
       title: "Aur Mohabbat Kitni Karoon",
       artist: "Arijit Singh",
-      src: "/Aur-Mohabbat-Kitni-Karoon.mp3",
-      img: "/Aur-Mohabbat-kitni-karoon.jpeg",
+      src: `${base}Aur-Mohabbat-Kitni-Karoon.mp3`,
+      img: `${base}Aur-Mohabbat-kitni-karoon.jpeg`,
     },
     arijit2: {
       title: "Aaj Ke Baad",
       artist: "Manan Bhardwaj and Tulsi Kumar",
-      src: "/Aaj-Ke-Baad.mp3",
-      img: "/Aaj-Ke-Baad.jpeg",
+      src: `${base}Aaj-Ke-Baad.mp3`,
+      img: `${base}Aaj-Ke-Baad.jpeg`,
     },
     arijit3: {
       title: "Aankhon Ke Darmiya",
       artist: "Rishab Tiwari",
-      src: "/Aankhon-Ke-Darmiya.mp3",
-      img: "/Aankhon-Ke-Darmiya.jpeg",
+      src: `${base}Aankhon-Ke-Darmiya.mp3`,
+      img: `${base}Aankhon-Ke-Darmiya.jpeg`,
     },
     arijit4: {
       title: "Jab Tu Sajan",
       artist: "Rochak Kohli, Mohit Chauhan, Gurpreet Saini",
-      src: "/Jab-Tu-Sajan.mp3",
-      img: "/Jab-Tu-Sajan.jpeg",
+      src: `${base}Jab-Tu-Sajan.mp3`,
+      img: `${base}Jab-Tu-Sajan.jpeg`,
     },
     arijit5: {
       title: "Ibadatein",
       artist: "Awantika, Siddhant Kaushal, Anshul Garg",
-      src: "/Ibadatein.mp3",
-      img: "/Ibadatein.jpeg",
+      src: `${base}Ibadatein.mp3`,
+      img: `${base}Ibadatein.jpeg`,
     },
   };
 
@@ -95,7 +97,7 @@ export default function Hero() {
             </p>
           </div>
           <img
-            src="/portfolio-pic.jpg"
+            src={`${base}portfolio-pic.jpg`}
             alt="Kishan Gupta"
             className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 rounded-full border-2 border-white shadow-lg object-cover"
           />
@@ -167,15 +169,14 @@ export default function Hero() {
 
   return (
     <div className="min-h-screen bg-black px-2 sm:px-4 pt-28 pb-10 flex items-center justify-center">
-      
-      {/* Mobile View (Only About) */}
-      <div className="block sm:hidden w-full max-w-lg  text-white">
+      {/* Mobile View */}
+      <div className="block sm:hidden w-full max-w-lg text-white">
         <div className="bg-black/90 backdrop-blur-md rounded-xl shadow-xl p-4">
           {renderContent()}
         </div>
       </div>
 
-      {/* Desktop View (Full System UI) */}
+      {/* Desktop View */}
       <div className="hidden sm:block w-full max-w-[960px]">
         <div className="relative rounded-xl shadow-2xl overflow-hidden border border-gray-700 bg-black">
           {/* Background */}
@@ -187,7 +188,7 @@ export default function Hero() {
             }}
           />
 
-          {/* Mac-like Window */}
+          {/* Mac Window */}
           <div className="relative z-10 flex flex-col justify-between min-h-[500px]">
             {/* Top Bar */}
             <div className="w-full flex flex-wrap justify-between items-center px-4 py-2 bg-white/50 backdrop-blur-sm text-xs text-gray-900">
@@ -207,7 +208,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Active App */}
+            {/* App Panel */}
             {openApp && (
               <div
                 className={`m-4 ${
@@ -236,7 +237,7 @@ export default function Hero() {
               </div>
             )}
 
-            {/* Dock Bar */}
+            {/* Dock */}
             <div className="mt-auto mb-4 mx-auto px-4 py-2 bg-white w-fit backdrop-blur-md rounded-3xl flex flex-wrap justify-center gap-3 shadow-lg">
               {apps.map((app) => (
                 <div key={app.id} className="flex flex-col items-center w-12 sm:w-14">
@@ -252,7 +253,6 @@ export default function Hero() {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </div>
