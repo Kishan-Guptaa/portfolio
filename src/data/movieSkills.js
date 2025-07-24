@@ -1,0 +1,92 @@
+export const movieSkills = [
+  {
+    name: "HTML",
+    icon: "https://skillicons.dev/icons?i=html&theme=light",
+    tagline: "Markup Master",
+    bg: "from-orange-400 to-yellow-300",
+  },
+  {
+    name: "CSS",
+    icon: "https://skillicons.dev/icons?i=css&theme=light",
+    tagline: "Style Sorcerer",
+    bg: "from-blue-400 to-indigo-500",
+  },
+  {
+    name: "JavaScript",
+    icon: "https://skillicons.dev/icons?i=javascript&theme=light",
+    tagline: "Script Commander",
+    bg: "from-yellow-300 to-orange-400",
+  },
+  {
+    name: "TypeScript",
+    icon: "https://skillicons.dev/icons?i=typescript&theme=light",
+    tagline: "Strict Coder",
+    bg: "from-blue-400 to-blue-700",
+  },
+  {
+    name: "React",
+    icon: "https://skillicons.dev/icons?i=react&theme=light",
+    tagline: "UI Superhero",
+    bg: "from-cyan-400 to-blue-500",
+  },
+  {
+    name: "Node.js",
+    icon: "https://skillicons.dev/icons?i=nodejs&theme=light",
+    tagline: "Backend Wizard",
+    bg: "from-green-400 to-lime-500",
+  },
+  {
+    name: "Express",
+    icon: "https://skillicons.dev/icons?i=express&theme=light",
+    tagline: "API Architect",
+    bg: "from-gray-700 to-gray-900",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://skillicons.dev/icons?i=mongodb&theme=light",
+    tagline: "Data Kingpin",
+    bg: "from-emerald-400 to-green-600",
+  },
+  {
+    name: "Tailwind",
+    icon: "https://skillicons.dev/icons?i=tailwindcss&theme=light",
+    tagline: "Style Ninja",
+    bg: "from-teal-400 to-cyan-500",
+  },
+  {
+    name: "Git",
+    icon: "https://skillicons.dev/icons?i=git&theme=light",
+    tagline: "Commit Master",
+    bg: "from-orange-400 to-red-500",
+  },
+  {
+    name: "GitHub",
+    icon: "https://skillicons.dev/icons?i=github&theme=light",
+    tagline: "Version Control Hero",
+    bg: "from-zinc-800 to-gray-700",
+  },
+  {
+    name: "VS Code",
+    icon: "https://skillicons.dev/icons?i=vscode&theme=light",
+    tagline: "Code Playground",
+    bg: "from-indigo-400 to-blue-600",
+  },
+  {
+    name: "Java",
+    icon: "https://skillicons.dev/icons?i=java&theme=light",
+    tagline: "OOP Warrior",
+    bg: "from-red-400 to-orange-500",
+  },
+  {
+    name: "C",
+    icon: "https://skillicons.dev/icons?i=c&theme=light",
+    tagline: "Low-level Legend",
+    bg: "from-slate-500 to-slate-800",
+  },
+  {
+    name: "C++",
+    icon: "https://skillicons.dev/icons?i=cpp&theme=light",
+    tagline: "Performance Beast",
+    bg: "from-blue-600 to-indigo-700",
+  },
+];
